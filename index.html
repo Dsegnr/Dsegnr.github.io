@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>王佳豪 · 计算机科学与技术</title>
+<meta name="description" content="王佳豪（Dsegnr），河南工业大学计算机科学与技术 2025 级。多传感器融合的边坡形变监测与分级预警、多模态视觉感知、脑电时序信号。">
+<meta name="theme-color" content="#101417">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23101417'/%3E%3Cpath d='M3 26C11 25 16 22 20 15S27 5 30 3' stroke='%23F2B705' stroke-width='2.5' fill='none'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --rock:#101417;
+    --rock-2:#161C20;
+    --line:#232C31;
+    --ink:#EDF1F2;
+    --mute:#8C9AA1;
+    --faint:#5C6A70;
+    --signal:#F2B705;
+    --shell:min(920px, 100% - 3rem);
+    --serif:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","SimSun",Georgia,serif;
+    --sans:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC","Hiragino Sans GB",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--rock);color:var(--ink);
+    font-family:var(--sans);font-size:16.5px;line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  a:hover,a:focus-visible{color:var(--signal)}
+  :focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:2px}
+  .shell{width:var(--shell);margin-inline:auto}
+
+  /* ── 首屏 ─────────────────────────────── */
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero-art{position:absolute;inset:0;width:100%;height:100%;display:block}
+  .hero-body{position:relative;display:flex;flex-direction:column;justify-content:flex-end;
+             min-height:74vh;padding:5rem 0 3.25rem}
+  .where{margin:0 0 auto;padding-top:.5rem;font-size:.86rem;color:var(--faint);letter-spacing:.02em}
+  h1{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(3.1rem,8.5vw,5.4rem);
+     line-height:1.05;letter-spacing:.01em}
+  h1 .latin{display:block;margin-top:.55rem;font-family:"Iowan Old Style",Palatino,Georgia,serif;
+            font-size:clamp(.95rem,2vw,1.25rem);font-weight:400;letter-spacing:.18em;color:var(--mute)}
+  .line{margin:1.9rem 0 0;max-width:22em;font-size:clamp(1.05rem,2.6vw,1.42rem);
+        font-family:var(--serif);line-height:1.6;color:var(--mute)}
+  .line b{font-weight:400;color:var(--ink)}
+  .jump{margin:2.6rem 0 0;display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;font-size:.9rem;color:var(--mute)}
+  .jump a{padding-bottom:.15rem;border-bottom:1px solid transparent}
+  .jump a:hover{border-bottom-color:var(--signal)}
+
+  /* ── 通用版式 ─────────────────────────── */
+  main{padding:5.5rem 0 0}
+  section{padding-bottom:4.6rem}
+  .head{display:flex;align-items:center;gap:.8rem;margin:0 0 2.1rem}
+  .head svg{flex:none;overflow:visible}
+  h2{margin:0;font-family:var(--serif);font-weight:400;font-size:1.32rem;letter-spacing:.04em}
+  .note{color:var(--mute)}
+  .dim{color:var(--faint)}
+  sup{font-size:.72em;color:var(--faint);vertical-align:super}
+
+  /* ── 项目 ─────────────────────────────── */
+  .project{display:grid;grid-template-columns:1fr;gap:.35rem;
+           padding:1.5rem 0 1.5rem 1.5rem;border-left:1px solid var(--line)}
+  .project:first-of-type{border-left-color:var(--signal)}
+  .project + .project{margin-top:.2rem}
+  .project h3{margin:0;font-size:1.06rem;font-weight:600;letter-spacing:.01em}
+  .project .tag{font-size:.78rem;color:var(--faint);font-weight:400}
+  .project p{margin:.3rem 0 0;color:var(--mute);max-width:44em;font-size:.96rem}
+
+  /* ── 表格式清单 ───────────────────────── */
+  .rows{display:block}
+  .row{display:grid;grid-template-columns:7.5rem 1fr;gap:1.2rem;
+       padding:.72rem 0;border-top:1px solid var(--line)}
+  .row:last-child{border-bottom:1px solid var(--line)}
+  .row .when{color:var(--faint);font-variant-numeric:tabular-nums;font-size:.9rem;padding-top:.1rem}
+  .row .what{font-size:1rem}
+  .row .what em{font-style:normal;color:var(--signal)}
+
+  /* ── 技能 ─────────────────────────────── */
+  .grid{display:grid;grid-template-columns:9rem 1fr;gap:.9rem 1.6rem;align-items:baseline}
+  .grid dt{color:var(--faint);font-size:.9rem}
+  .grid dd{margin:0;font-size:1rem}
+  .stack{display:flex;flex-wrap:wrap;gap:.45rem}
+  .stack span{font-size:.82rem;color:var(--mute);border:1px solid var(--line);
+              border-radius:3px;padding:.12rem .55rem}
+
+  footer{border-top:1px solid var(--line);padding:2.6rem 0 4rem;font-size:.94rem;color:var(--mute)}
+  footer .shell{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:baseline;justify-content:space-between}
+  .print-btn{font:inherit;font-size:.86rem;color:var(--mute);background:none;
+             border:1px solid var(--line);border-radius:3px;padding:.35rem .9rem;cursor:pointer}
+  .print-btn:hover{color:var(--signal);border-color:var(--signal)}
+
+  .only-print{display:none}
+
+  /* ── 打印 / 存 PDF ────────────────────── */
+  @media print{
+    @page{size:A4;margin:14mm 15mm}
+    :root{--ink:#111;--mute:#3d474d;--faint:#6a757b;--line:#d3d9dc;--signal:#8a6400}
+    body{background:#fff;color:#111;font-size:10.2pt;line-height:1.62}
+    .hero{display:none}
+    .only-print{display:block;margin:0 0 1.4rem;padding-bottom:.8rem;border-bottom:1.5px solid #111}
+    .only-print h1{font-size:20pt;line-height:1.2}
+    .only-print .latin{display:inline;margin-left:.6rem;font-size:9.5pt;letter-spacing:.12em;color:#555}
+    .only-print p{margin:.35rem 0 0;font-size:9.2pt;color:#3d474d}
+    main{padding:0}
+    section{padding-bottom:1.35rem;break-inside:avoid}
+    .head{margin-bottom:.7rem}
+    .head svg{display:none}
+    h2{font-size:11.5pt;border-bottom:1px solid #111;padding-bottom:.2rem;letter-spacing:.08em}
+    .project{padding:.55rem 0 .55rem 1rem;break-inside:avoid}
+    .project p{font-size:9.6pt}
+    .row{padding:.32rem 0}
+    .row .when{font-size:9.2pt}
+    .row .what{font-size:9.9pt}
+    .stack span{border-color:#c9d0d3;color:#3d474d;font-size:8.8pt}
+    footer{border-top:none;padding:0}
+    footer .shell{display:block;font-size:9.4pt}
+    .print-btn{display:none}
+    a{color:#111}
+  }
+  @media (max-width:640px){
+    .row{grid-template-columns:1fr;gap:.1rem}
+    .grid{grid-template-columns:1fr;gap:.25rem 0}
+    .grid dt{margin-top:.7rem}
+    .hero-body{min-height:82vh}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="hero-art" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <rect width="1200" height="620" fill="#101417"/>
+    <g fill="none" stroke="#161D21" stroke-width="1">
+      <path d="M 560 620 C 640 470 800 372 1000 358 C 1110 350 1170 366 1200 380"/>
+      <path d="M 836 620 C 884 556 960 512 1058 504 C 1130 498 1180 508 1200 516"/>
+      <path d="M -40 -20 C 120 -40 300 -18 430 46 C 520 92 590 148 650 214"/>
+      <path d="M -40 34 C 100 16 262 34 378 92 C 452 130 512 180 562 236"/>
+    </g>
+    <g fill="none" stroke="#232C31" stroke-width="1">
+      <path d="M 664 620 C 728 500 838 428 968 418 C 1074 410 1148 428 1200 456"/>
+      <path d="M 760 620 C 812 528 894 474 986 468 C 1076 462 1140 476 1200 500"/>
+      <path d="M 906 620 C 940 578 986 550 1040 546 C 1094 542 1150 552 1200 570"/>
+    </g>
+    <path class="trace" d="M -30 556 C 180 552 360 544 520 524 C 640 508 740 482 830 438 C 910 398 985 320 1055 232 C 1080 198 1092 182 1100 168"
+          fill="none" stroke="#F2B705" stroke-width="2" stroke-linecap="round"
+          stroke-dasharray="1800" stroke-dashoffset="1800">
+      <animate attributeName="stroke-dashoffset" from="1800" to="0" dur="2.8s" begin="0.15s" fill="freeze"/>
+    </path>
+    <circle cx="1100" cy="168" r="4" fill="#F2B705" opacity="0"/>
+    <circle cx="1100" cy="168" r="4" fill="#F2B705">
+      <animate attributeName="opacity" from="0" to="1" dur=".5s" begin="2.85s" fill="freeze"/>
+    </circle>
+  </svg>
+
+  <div class="shell hero-body">
+    <p class="where">河南工业大学　计算机科学与技术　2025 级</p>
+    <h1>王佳豪<span class="latin">Dsegnr</span></h1>
+    <p class="line">我做的事，大多可以归结成一句：<b>让一条正在缓慢越界的曲线，在被越过之前被看见。</b></p>
+    <nav class="jump">
+      <a href="#projects">项目</a>
+      <a href="#honors">竞赛</a>
+      <a href="#more">其他</a>
+      <a href="#skills">技能</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </div>
+</header>
+
+<main class="shell">
+
+  <div class="only-print">
+    <h1>王佳豪<span class="latin">Dsegnr</span></h1>
+    <p>河南工业大学　计算机科学与技术　2025 级本科　|　3660157476@qq.com　|　github.com/Dsegnr</p>
+  </div>
+
+  <section id="projects">
+    <div class="head">
+      <svg width="26" height="12" viewBox="0 0 26 12" aria-hidden="true">
+        <path d="M0 10 C7 10 11 8 15 4 C18 1 22 0 26 0" fill="none" stroke="#F2B705" stroke-width="1.6"/>
+      </svg>
+      <h2>项目</h2>
+    </div>
+
+    <article class="project">
+      <h3>边坡形变监测与分级预警系统 <span class="tag">在研 · 参赛期间暂不公开</span></h3>
+      <p>多传感器融合，把地表位移、降雨与库水位放在同一条时间轴上，做双时间尺度的分级预警。负责数据处理与预警算法。软件著作权已申请。</p>
+    </article>
+
+    <article class="project">
+      <h3>城市场景多模态目标检测 <span class="tag">在研</span></h3>
+      <p>可见光、红外与深度三种模态的对齐与融合，用于城市道路场景下的目标检测。</p>
+    </article>
+
+    <article class="project">
+      <h3>跨被试脑电情绪识别 <span class="tag">在研</span></h3>
+      <p>在 DEAP 数据集上做跨被试泛化，比较不同频带组合与时序建模路径对结果的影响。软件著作权已申请。</p>
+    </article>
+
+    <article class="project">
+      <h3>智能简历解析与管理系统 <span class="tag">已完成</span></h3>
+      <p>面向招聘场景的简历解析、编辑、导出与分享，含后端服务与前端界面。软件著作权已申请。</p>
+    </article>
+  </section>
+
+  <section id="honors">
+    <div class="head">
+      <svg width="26" height="12" viewBox="0 0 26 12" aria-hidden="true">
+        <path d="M0 10 C7 10 11 8 15 4 C18 1 22 0 26 0" fill="none" stroke="#F2B705" stroke-width="1.6"/>
+      </svg>
+      <h2>竞赛</h2>
+    </div>
+    <div class="rows">
+      <div class="row"><span class="when">2026.06</span><span class="what">蓝桥杯全国软件和信息技术专业人才大赛，C/C++ 程序设计大学 B 组 <em>全国总决赛三等奖</em></span></div>
+      <div class="row"><span class="when">2026.05</span><span class="what">蓝桥杯全国软件和信息技术专业人才大赛，河南赛区 <em>一等奖</em></span></div>
+      <div class="row"><span class="when">2026.06</span><span class="what">APMCM 亚太地区大学生数学建模竞赛 <em>本科组二等奖</em></span></div>
+      <div class="row"><span class="when">2026.08</span><span class="what">第七届"华数杯"全国大学生数学建模竞赛 <em>本科生组三等奖</em></span></div>
+      <div class="row"><span class="when">2026.09</span><span class="what">全国大学生数学建模竞赛（高教社杯）<span class="dim">参赛</span></span></div>
+      <div class="row"><span class="when">2026.09</span><span class="what">全球校园人工智能算法精英大赛<span class="dim">进行中</span></span></div>
+    </div>
+  </section>
+
+  <section id="more">
+    <div class="head">
+      <svg width="26" height="12" viewBox="0 0 26 12" aria-hidden="true">
+        <path d="M0 10 C7 10 11 8 15 4 C18 1 22 0 26 0" fill="none" stroke="#F2B705" stroke-width="1.6"/>
+      </svg>
+      <h2>其他</h2>
+    </div>
+    <div class="rows">
+      <div class="row"><span class="when">2026.07</span><span class="what">IITC 工业互联网平台开发工程师（中级）</span></div>
+      <div class="row"><span class="when">2026.06</span><span class="what">全国大学英语四级（CET-4）497</span></div>
+      <div class="row"><span class="when">2026.05</span><span class="what">河南工业大学 2025 年度"三好学生"</span></div>
+      <div class="row"><span class="when">2026.04</span><span class="what">第七届体育文化节暨第四届素质挑战赛，男子引体向上三等奖</span></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="head">
+      <svg width="26" height="12" viewBox="0 0 26 12" aria-hidden="true">
+        <path d="M0 10 C7 10 11 8 15 4 C18 1 22 0 26 0" fill="none" stroke="#F2B705" stroke-width="1.6"/>
+      </svg>
+      <h2>技能与教育</h2>
+    </div>
+    <dl class="grid">
+      <dt>教育</dt>
+      <dd>河南工业大学　计算机科学与技术（本科）　2025.09 – 2029.06（预计）</dd>
+      <dt>编程语言</dt>
+      <dd>Python　C / C++　MATLAB　JavaScript</dd>
+      <dt>方向工具</dt>
+      <dd>PyTorch　Ultralytics YOLO　OpenCV　NumPy / pandas　Git　LaTeX</dd>
+      <dt>外语</dt>
+      <dd>CET-4 497，六级备考中</dd>
+    </dl>
+  </section>
+
+  <section id="contact">
+    <div class="head">
+      <svg width="26" height="12" viewBox="0 0 26 12" aria-hidden="true">
+        <path d="M0 10 C7 10 11 8 15 4 C18 1 22 0 26 0" fill="none" stroke="#F2B705" stroke-width="1.6"/>
+      </svg>
+      <h2>联系</h2>
+    </div>
+    <div class="rows">
+      <div class="row"><span class="when">邮箱</span><span class="what"><a href="mailto:3660157476@qq.com">3660157476@qq.com</a></span></div>
+      <div class="row"><span class="when">GitHub</span><span class="what"><a href="https://github.com/Dsegnr">github.com/Dsegnr</a></span></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="shell">
+    <span>王佳豪 · 河南工业大学计算机科学与技术 · 2025 级</span>
+    <button class="print-btn" type="button" onclick="window.print()">打印 / 存为 PDF</button>
+  </div>
+</footer>
+
+</body>
+</html>
