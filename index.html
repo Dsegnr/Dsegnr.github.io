@@ -4,13 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>王佳豪 · 计算机科学与技术</title>
-<meta name="description" content="王佳豪（Dsegnr），河南工业大学计算机科学与技术 2025 级。多传感器融合的边坡形变监测与分级预警、多模态视觉感知、脑电时序信号。">
+<meta name="description" content="王佳豪（Dsegnr），河南工业大学计算机科学与技术 2025 级。跨被试脑电情感识别、多模态视觉感知、边坡灾害预警。">
 <meta name="theme-color" content="#101417">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23101417'/%3E%3Cpath d='M3 26C11 25 16 22 20 15S27 5 30 3' stroke='%23F2B705' stroke-width='2.5' fill='none'/%3E%3C/svg%3E">
 <style>
   :root{
     --rock:#101417;
-    --rock-2:#161C20;
     --line:#232C31;
     --ink:#EDF1F2;
     --mute:#8C9AA1;
@@ -21,12 +20,10 @@
     --sans:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC","Hiragino Sans GB",system-ui,sans-serif;
   }
   *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    margin:0;background:var(--rock);color:var(--ink);
-    font-family:var(--sans);font-size:16.5px;line-height:1.85;
-    -webkit-font-smoothing:antialiased;
-  }
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{margin:0;background:var(--rock);color:var(--ink);
+       font-family:var(--sans);font-size:16.5px;line-height:1.85;
+       -webkit-font-smoothing:antialiased}
   a{color:inherit;text-decoration:none}
   a:hover,a:focus-visible{color:var(--signal)}
   :focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:2px}
@@ -36,40 +33,40 @@
   .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
   .hero-art{position:absolute;inset:0;width:100%;height:100%;display:block}
   .hero-body{position:relative;display:flex;flex-direction:column;justify-content:flex-end;
-             min-height:74vh;padding:5rem 0 3.25rem}
+             min-height:72vh;padding:5rem 0 3.25rem}
   .where{margin:0 0 auto;padding-top:.5rem;font-size:.86rem;color:var(--faint);letter-spacing:.02em}
   h1{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(3.1rem,8.5vw,5.4rem);
-     line-height:1.05;letter-spacing:.01em}
+     line-height:1.05}
   h1 .latin{display:block;margin-top:.55rem;font-family:"Iowan Old Style",Palatino,Georgia,serif;
             font-size:clamp(.95rem,2vw,1.25rem);font-weight:400;letter-spacing:.18em;color:var(--mute)}
-  .line{margin:1.9rem 0 0;max-width:22em;font-size:clamp(1.05rem,2.6vw,1.42rem);
-        font-family:var(--serif);line-height:1.6;color:var(--mute)}
-  .line b{font-weight:400;color:var(--ink)}
+  .line{margin:1.9rem 0 0;max-width:30em;font-size:clamp(1rem,2.3vw,1.22rem);
+        font-family:var(--serif);line-height:1.75;color:var(--ink)}
+  .line span{color:var(--mute)}
   .jump{margin:2.6rem 0 0;display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;font-size:.9rem;color:var(--mute)}
   .jump a{padding-bottom:.15rem;border-bottom:1px solid transparent}
   .jump a:hover{border-bottom-color:var(--signal)}
 
   /* ── 通用版式 ─────────────────────────── */
-  main{padding:5.5rem 0 0}
-  section{padding-bottom:4.6rem}
-  .head{display:flex;align-items:center;gap:.8rem;margin:0 0 2.1rem}
+  main{padding:5rem 0 0}
+  section{padding-bottom:4.4rem}
+  .head{display:flex;align-items:center;gap:.8rem;margin:0 0 2rem}
   .head svg{flex:none;overflow:visible}
   h2{margin:0;font-family:var(--serif);font-weight:400;font-size:1.32rem;letter-spacing:.04em}
-  .note{color:var(--mute)}
   .dim{color:var(--faint)}
-  sup{font-size:.72em;color:var(--faint);vertical-align:super}
 
   /* ── 项目 ─────────────────────────────── */
-  .project{display:grid;grid-template-columns:1fr;gap:.35rem;
-           padding:1.5rem 0 1.5rem 1.5rem;border-left:1px solid var(--line)}
+  .project{padding:1.45rem 0 1.45rem 1.5rem;border-left:1px solid var(--line)}
   .project:first-of-type{border-left-color:var(--signal)}
-  .project + .project{margin-top:.2rem}
-  .project h3{margin:0;font-size:1.06rem;font-weight:600;letter-spacing:.01em}
-  .project .tag{font-size:.78rem;color:var(--faint);font-weight:400}
-  .project p{margin:.3rem 0 0;color:var(--mute);max-width:44em;font-size:.96rem}
+  .project h3{margin:0;font-size:1.06rem;font-weight:600;display:flex;flex-wrap:wrap;
+              align-items:baseline;gap:.6rem}
+  .project .tag{font-size:.76rem;color:var(--faint);font-weight:400;
+                border:1px solid var(--line);border-radius:3px;padding:.05rem .5rem;white-space:nowrap}
+  .project p{margin:.45rem 0 0;color:var(--mute);max-width:46em;font-size:.95rem}
+  .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .chips span{font-size:.76rem;color:var(--faint);border:1px solid var(--line);
+              border-radius:3px;padding:.02rem .5rem}
 
-  /* ── 表格式清单 ───────────────────────── */
-  .rows{display:block}
+  /* ── 清单 ─────────────────────────────── */
   .row{display:grid;grid-template-columns:7.5rem 1fr;gap:1.2rem;
        padding:.72rem 0;border-top:1px solid var(--line)}
   .row:last-child{border-bottom:1px solid var(--line)}
@@ -78,54 +75,52 @@
   .row .what em{font-style:normal;color:var(--signal)}
 
   /* ── 技能 ─────────────────────────────── */
-  .grid{display:grid;grid-template-columns:9rem 1fr;gap:.9rem 1.6rem;align-items:baseline}
+  .grid{display:grid;grid-template-columns:9rem 1fr;gap:.9rem 1.6rem;align-items:baseline;margin:0}
   .grid dt{color:var(--faint);font-size:.9rem}
   .grid dd{margin:0;font-size:1rem}
-  .stack{display:flex;flex-wrap:wrap;gap:.45rem}
-  .stack span{font-size:.82rem;color:var(--mute);border:1px solid var(--line);
-              border-radius:3px;padding:.12rem .55rem}
 
   footer{border-top:1px solid var(--line);padding:2.6rem 0 4rem;font-size:.94rem;color:var(--mute)}
   footer .shell{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:baseline;justify-content:space-between}
   .print-btn{font:inherit;font-size:.86rem;color:var(--mute);background:none;
              border:1px solid var(--line);border-radius:3px;padding:.35rem .9rem;cursor:pointer}
   .print-btn:hover{color:var(--signal);border-color:var(--signal)}
-
   .only-print{display:none}
 
   /* ── 打印 / 存 PDF ────────────────────── */
   @media print{
-    @page{size:A4;margin:14mm 15mm}
+    @page{size:A4;margin:13mm 15mm}
     :root{--ink:#111;--mute:#3d474d;--faint:#6a757b;--line:#d3d9dc;--signal:#8a6400}
-    body{background:#fff;color:#111;font-size:9.7pt;line-height:1.55}
+    body{background:#fff;color:#111;font-size:9.6pt;line-height:1.5}
     .hero{display:none}
-    .only-print{display:block;margin:0 0 .9rem;padding-bottom:.6rem;border-bottom:1.5px solid #111}
+    .only-print{display:block;margin:0 0 .85rem;padding-bottom:.55rem;border-bottom:1.5px solid #111}
     .only-print h1{font-size:18pt;line-height:1.2}
     .only-print .latin{display:inline;margin-left:.6rem;font-size:9pt;letter-spacing:.12em;color:#555}
-    .only-print p{margin:.28rem 0 0;font-size:8.8pt;color:#3d474d}
+    .only-print p{margin:.25rem 0 0;font-size:8.6pt;color:#3d474d}
     main{padding:0}
-    section{padding-bottom:.78rem;break-inside:avoid}
-    .head{margin-bottom:.5rem}
+    section{padding-bottom:.72rem;break-inside:avoid}
+    .head{margin-bottom:.45rem}
     .head svg{display:none}
-    h2{font-size:10.8pt;border-bottom:1px solid #111;padding-bottom:.15rem;letter-spacing:.08em}
-    .project{padding:.32rem 0 .32rem .85rem;break-inside:avoid}
-    .project h3{font-size:10pt}
-    .project p{margin-top:.12rem;font-size:9.2pt}
-    .row{padding:.2rem 0}
-    .row .when{font-size:8.8pt}
-    .row .what{font-size:9.5pt}
-    .grid{gap:.3rem 1.4rem}
-    .grid dt{font-size:8.8pt}
-    .grid dd{font-size:9.5pt}
+    h2{font-size:10.6pt;border-bottom:1px solid #111;padding-bottom:.15rem;letter-spacing:.08em}
+    .project{padding:.28rem 0 .28rem .85rem;break-inside:avoid}
+    .project h3{font-size:9.9pt}
+    .project .tag{font-size:7.6pt;border-color:#c9d0d3}
+    .project p{margin-top:.1rem;font-size:9.1pt}
+    .chips{display:none}
+    .row{padding:.18rem 0}
+    .row .when{font-size:8.6pt}
+    .row .what{font-size:9.4pt}
+    .grid{gap:.28rem 1.4rem}
+    .grid dt{font-size:8.6pt}
+    .grid dd{font-size:9.4pt}
+    .print-hide{display:none}
     #contact,footer{display:none}
-    .print-btn{display:none}
     a{color:#111}
   }
   @media (max-width:640px){
     .row{grid-template-columns:1fr;gap:.1rem}
     .grid{grid-template-columns:1fr;gap:.25rem 0}
     .grid dt{margin-top:.7rem}
-    .hero-body{min-height:82vh}
+    .hero-body{min-height:80vh}
   }
 </style>
 </head>
@@ -145,7 +140,7 @@
       <path d="M 760 620 C 812 528 894 474 986 468 C 1076 462 1140 476 1200 500"/>
       <path d="M 906 620 C 940 578 986 550 1040 546 C 1094 542 1150 552 1200 570"/>
     </g>
-    <path class="trace" d="M -30 556 C 180 552 360 544 520 524 C 640 508 740 482 830 438 C 910 398 985 320 1055 232 C 1080 198 1092 182 1100 168"
+    <path d="M -30 556 C 180 552 360 544 520 524 C 640 508 740 482 830 438 C 910 398 985 320 1055 232 C 1080 198 1092 182 1100 168"
           fill="none" stroke="#F2B705" stroke-width="2" stroke-linecap="round"
           stroke-dasharray="1800" stroke-dashoffset="1800">
       <animate attributeName="stroke-dashoffset" from="1800" to="0" dur="2.8s" begin="0.15s" fill="freeze"/>
@@ -159,7 +154,7 @@
   <div class="shell hero-body">
     <p class="where">河南工业大学　计算机科学与技术　2025 级</p>
     <h1>王佳豪<span class="latin">Dsegnr</span></h1>
-    <p class="line">我做的事，大多可以归结成一句：<b>让一条正在缓慢越界的曲线，在被越过之前被看见。</b></p>
+    <p class="line">在 DEAP 与 SEED 上做跨被试脑电情感识别，也做多模态视觉感知和边坡灾害预警。<span>共同点是：用多源信号，把不容易看见的变化提前看出来。</span></p>
     <nav class="jump">
       <a href="#projects">项目</a>
       <a href="#honors">竞赛</a>
@@ -174,7 +169,7 @@
 
   <div class="only-print">
     <h1>王佳豪<span class="latin">Dsegnr</span></h1>
-    <p>河南工业大学　计算机科学与技术　2025 级本科　|　3660157476@qq.com　|　github.com/Dsegnr</p>
+    <p>河南工业大学　计算机科学与技术　2025 级本科　|　3660157476@qq.com　|　dsegnr.github.io　|　github.com/Dsegnr</p>
   </div>
 
   <section id="projects">
@@ -186,23 +181,33 @@
     </div>
 
     <article class="project">
-      <h3>边坡形变监测与分级预警系统 <span class="tag">在研 · 参赛期间暂不公开</span></h3>
-      <p>多传感器融合，把地表位移、降雨与库水位放在同一条时间轴上，做双时间尺度的分级预警。负责数据处理与预警算法。软件著作权已申请。</p>
+      <h3>星图 · 岗位能力图谱动态演化与分析系统 <span class="tag">挑战杯"揭榜挂帅" · 参赛中</span></h3>
+      <p>面向新一代信息技术领域的岗位能力分析平台。多源异构岗位数据经知识图谱建模与大模型归因，输出岗位演化、技能共现与人岗匹配；离线验证集上 JD 解析 F1 0.955、简历提取 F1 0.953、人岗匹配 Top-5 1.000 / MRR 0.953。我负责求职端"我的"模块与企业端企业信息模块，并参与模型幻觉防控。</p>
+      <div class="chips"><span>React</span><span>TypeScript</span><span>FastAPI</span><span>SQLAlchemy</span><span>MySQL</span><span>Neo4j</span><span>Docker</span></div>
     </article>
 
     <article class="project">
-      <h3>城市场景多模态目标检测 <span class="tag">在研</span></h3>
-      <p>可见光、红外与深度三种模态的对齐与融合，用于城市道路场景下的目标检测。</p>
+      <h3>边坡哨兵 · 边坡形变监测与分级预警系统 <span class="tag">学科竞赛 · 参赛中</span></h3>
+      <p>把地表位移、降雨与库水位放进同一条时间轴，做双时间尺度的分级预警：长周期趋势项刻画缓变，短周期项捕捉加速前兆，再按分级阈值输出预警等级。负责多传感器数据对齐、预警算法与可视化界面。软件著作权已申请。</p>
+      <div class="chips"><span>Python</span><span>时序融合</span><span>多传感器</span><span>可视化</span></div>
     </article>
 
     <article class="project">
-      <h3>跨被试脑电情绪识别 <span class="tag">在研</span></h3>
-      <p>在 DEAP 数据集上做跨被试泛化，比较不同频带组合与时序建模路径对结果的影响。软件著作权已申请。</p>
+      <h3>跨被试脑电情感识别 <span class="tag">科研 · 长期进行中</span></h3>
+      <p>在 DEAP（32 折）与 SEED（15 折）上复现并改进基于 Mamba / SSM 的 HSF-BPM 架构，全程严格执行 LOSO 留一被试协议，SEED 上窗口级复现到 0.725（论文 0.742）。系统验证了 26 组「可学习电极扫描顺序 / 脑区强化学习路由」变体，用数学推导、跨前端对照、代码级排查与跨数据集复现四重证据确认该方向在跨被试设定下不成立；在此基础上完成空间条件化融合门控的设计与 32 折验证，并做过训练吞吐优化（单核线程限制提速 14×、融合扫描核提速 105×）。</p>
+      <div class="chips"><span>PyTorch</span><span>Mamba / SSM</span><span>LOSO</span><span>DEAP</span><span>SEED</span></div>
     </article>
 
     <article class="project">
-      <h3>智能简历解析与管理系统 <span class="tag">已完成</span></h3>
-      <p>面向招聘场景的简历解析、编辑、导出与分享，含后端服务与前端界面。软件著作权已申请。</p>
+      <h3>城市场景多模态目标检测 <span class="tag">AIC 全球校园人工智能算法精英大赛 · 进行中</span></h3>
+      <p>可见光、红外与深度三种模态的数据对齐与融合，面向城市道路场景的目标检测。</p>
+      <div class="chips"><span>PyTorch</span><span>YOLO</span><span>多模态融合</span></div>
+    </article>
+
+    <article class="project print-hide">
+      <h3>"粮"心守护 · 粮库动态监管智能视觉分析系统 <span class="tag">中国国际大学生创新大赛 · 已完成</span></h3>
+      <p>粮库场景下的视觉分析与粮情预测：温湿度与品质预测模块。</p>
+      <div class="chips"><span>计算机视觉</span><span>时序预测</span></div>
     </article>
   </section>
 
@@ -215,7 +220,7 @@
     </div>
     <div class="rows">
       <div class="row"><span class="when">2026.06</span><span class="what">蓝桥杯全国软件和信息技术专业人才大赛，C/C++ 程序设计大学 B 组 <em>全国总决赛三等奖</em></span></div>
-      <div class="row"><span class="when">2026.05</span><span class="what">蓝桥杯全国软件和信息技术专业人才大赛，河南赛区 <em>一等奖</em></span></div>
+      <div class="row"><span class="when">2026.05</span><span class="what">蓝桥杯全国软件和信息技术专业人才大赛，C/C++ 程序设计大学 B 组 <em>河南赛区一等奖</em></span></div>
       <div class="row"><span class="when">2026.06</span><span class="what">APMCM 亚太地区大学生数学建模竞赛 <em>本科组二等奖</em></span></div>
       <div class="row"><span class="when">2026.08</span><span class="what">第七届"华数杯"全国大学生数学建模竞赛 <em>本科生组三等奖</em></span></div>
       <div class="row"><span class="when">2026.09</span><span class="what">全国大学生数学建模竞赛（高教社杯）<span class="dim">参赛</span></span></div>
@@ -249,9 +254,9 @@
       <dt>教育</dt>
       <dd>河南工业大学　计算机科学与技术（本科）　2025.09 – 2029.06（预计）</dd>
       <dt>编程语言</dt>
-      <dd>Python　C / C++　MATLAB　JavaScript</dd>
+      <dd>Python　C / C++　MATLAB　TypeScript</dd>
       <dt>方向工具</dt>
-      <dd>PyTorch　Ultralytics YOLO　OpenCV　NumPy / pandas　Git　LaTeX</dd>
+      <dd>PyTorch　Mamba / SSM　Ultralytics YOLO　OpenCV　NumPy / pandas　FastAPI　Git　LaTeX</dd>
       <dt>外语</dt>
       <dd>CET-4 497，六级备考中</dd>
     </dl>
