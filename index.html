@@ -85,33 +85,36 @@
              border:1px solid var(--line);border-radius:3px;padding:.35rem .9rem;cursor:pointer}
   .print-btn:hover{color:var(--signal);border-color:var(--signal)}
   .only-print{display:none}
+  .only-print-line{display:none}
 
   /* ── 打印 / 存 PDF ────────────────────── */
   @media print{
     @page{size:A4;margin:13mm 15mm}
     :root{--ink:#111;--mute:#3d474d;--faint:#6a757b;--line:#d3d9dc;--signal:#8a6400}
-    body{background:#fff;color:#111;font-size:9.6pt;line-height:1.5}
+    body{background:#fff;color:#111;font-size:9.15pt;line-height:1.44}
     .hero{display:none}
     .only-print{display:block;margin:0 0 .85rem;padding-bottom:.55rem;border-bottom:1.5px solid #111}
     .only-print h1{font-size:18pt;line-height:1.2}
     .only-print .latin{display:inline;margin-left:.6rem;font-size:9pt;letter-spacing:.12em;color:#555}
     .only-print p{margin:.25rem 0 0;font-size:8.6pt;color:#3d474d}
     main{padding:0}
-    section{padding-bottom:.72rem;break-inside:avoid}
-    .head{margin-bottom:.45rem}
+    section{padding-bottom:.58rem;break-inside:avoid}
+    .head{margin-bottom:.38rem}
     .head svg{display:none}
     h2{font-size:10.6pt;border-bottom:1px solid #111;padding-bottom:.15rem;letter-spacing:.08em}
-    .project{padding:.28rem 0 .28rem .85rem;break-inside:avoid}
-    .project h3{font-size:9.9pt}
+    .project{padding:.22rem 0 .22rem .8rem;break-inside:avoid}
+    .project h3{font-size:9.5pt}
     .project .tag{font-size:7.6pt;border-color:#c9d0d3}
-    .project p{margin-top:.1rem;font-size:9.1pt}
+    .project p{margin-top:.08rem;font-size:8.8pt}
     .chips{display:none}
-    .row{padding:.18rem 0}
-    .row .when{font-size:8.6pt}
-    .row .what{font-size:9.4pt}
-    .grid{gap:.28rem 1.4rem}
-    .grid dt{font-size:8.6pt}
-    .grid dd{font-size:9.4pt}
+    .row{padding:.12rem 0}
+    .row .when{font-size:8.2pt}
+    .row .what{font-size:8.95pt}
+    .grid{gap:.22rem 1.4rem}
+    .grid dt{font-size:8.2pt}
+    .grid dd{font-size:8.95pt}
+    .only-print-line{display:block;margin:0;font-size:8.85pt;color:#3d474d}
+    #more .rows{display:none}
     .print-hide{display:none}
     #contact,footer{display:none}
     a{color:#111}
@@ -267,6 +270,7 @@
       </svg>
       <h2>其他</h2>
     </div>
+    <p class="only-print-line">IITC 工业互联网平台开发工程师（中级）2026.07　·　全国大学英语四级 497　2026.06　·　河南工业大学 2025 年度"三好学生"　2026.05　·　第七届体育文化节男子引体向上三等奖　2026.04</p>
     <div class="rows">
       <div class="row"><span class="when">2026.07</span><span class="what">IITC 工业互联网平台开发工程师（中级）</span></div>
       <div class="row"><span class="when">2026.06</span><span class="what">全国大学英语四级（CET-4）497</span></div>
