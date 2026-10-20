@@ -11,6 +11,7 @@ const NODES=[
  {id:'eeg',name:'脑电研究',type:'研究项目',group:'research',p:[-22,14,6],description:'围绕跨被试脑电情感识别开展研究，使用 PyTorch、Mamba／状态空间模型与图结构时空建模技术。',anchor:'project-eeg'},
  {id:'aic',name:'多模态检测',type:'竞赛项目',group:'research',p:[-19,-13,-13],description:'城市场景视觉多模态目标检测，涉及 PyTorch、YOLO 与多模态融合，获 AIC 省赛三等奖。',anchor:'project-aic'},
  {id:'xingtu',name:'星图',type:'团队项目',group:'engineering',p:[22,13,-5],description:'承担个人中心、简历与企业信息相关开发，参与实验复核，并完成部署迁移与团队连接工具。',anchor:'project-xingtu'},
+ {id:'secops',name:'Sentinel',type:'个人项目',group:'engineering',p:[-28,-20,13],description:'本地安全研判与防御工具原型，包含公开情报、证据报告、主机基线与告警管理；仍在持续完善。',anchor:'project-secops'},
  {id:'quantum',name:'量子编译',type:'算法项目',group:'algorithms',p:[13,-18,14],description:'使用 Python、Cirq 与 SABRE 进行噪声自适应量子线路布局与路由优化。',anchor:'project-quantum'},
  {id:'modeling',name:'数学建模',type:'竞赛项目',group:'algorithms',p:[2,26,-15],description:'作为队长开展水质预测评估和导电介质仿真优化，获 APMCM 二等奖、华数杯三等奖。',anchor:'project-modeling'},
  {id:'pytorch',name:'PyTorch',type:'技术',group:'research',p:[-34,3,14],description:'用于模型训练、推理与实验评估；关联脑电研究与多模态检测经历。',anchor:'skills'},
@@ -24,7 +25,7 @@ const NODES=[
  {id:'sabre',name:'Cirq / SABRE',type:'技术',group:'algorithms',p:[6,-30,6],description:'用于量子线路映射、路由优化与公开题评测。',anchor:'project-quantum'},
  {id:'analysis',name:'时序与仿真',type:'技术',group:'algorithms',p:[1,33,5],description:'用于水质预测评估和导电介质仿真优化等数学建模工作。',anchor:'project-modeling'},
 ];
-const EDGES=[['person','eeg'],['person','aic'],['person','xingtu'],['person','quantum'],['person','modeling'],['eeg','pytorch'],['eeg','mamba'],['eeg','python'],['aic','pytorch'],['aic','yolo'],['xingtu','react'],['xingtu','fastapi'],['xingtu','databases'],['xingtu','docker'],['quantum','python'],['quantum','sabre'],['modeling','python'],['modeling','analysis']];
+const EDGES=[['person','secops'],['secops','python'],['secops','fastapi'],['person','eeg'],['person','aic'],['person','xingtu'],['person','quantum'],['person','modeling'],['eeg','pytorch'],['eeg','mamba'],['eeg','python'],['aic','pytorch'],['aic','yolo'],['xingtu','react'],['xingtu','fastapi'],['xingtu','databases'],['xingtu','docker'],['quantum','python'],['quantum','sabre'],['modeling','python'],['modeling','analysis']];
 const byId=new Map(NODES.map(n=>[n.id,n]));
 let selected=null,filter='all',paused=reduced.matches,inView=false,raf=0,last=0,draws=0;
 const pauseButton=document.querySelector('#graph-pause');

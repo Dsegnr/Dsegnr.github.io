@@ -1,0 +1,6 @@
+# Public website assets only; never add private knowledge collections.
+**/kb/
+**/knowledge_base/
+**/knowledge-base/
+**/知识库/
+**/04_知识库/
