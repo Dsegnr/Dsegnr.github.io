@@ -7,6 +7,7 @@ const section=document.querySelector('#ability-graph');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const COLORS={research:0x8bc8d7,engineering:0xf2bc51,algorithms:0xc0afe8,person:0xffd77e};
 const NODES=[
+ {id:'market',name:'正大杯市调',type:'竞赛经历',group:'algorithms',p:[29,-29,-4],description:'全国大学生市场调查与分析大赛：个人知识赛网考87分合格，团队实践赛筹备中。',anchor:'competition-market'},
  {id:'ssvep',name:'AIC · SSVEP',type:'竞赛项目',group:'algorithms',p:[-35,-4,-24],description:'AIC 脑电信号分类赛项，面向稳态视觉诱发电位（SSVEP）分类；负责信号处理、分类建模与评测。比赛进行中，与DEAP/SEED情感识别科研独立。',anchor:'project-ssvep'},
  {id:'sciencedb',name:'ScienceDB 数据',type:'科研数据成果',group:'research',p:[-33,25,24],description:'以第一作者在 Science Data Bank 发布滑坡监测数据与方法复现材料（V1，2026.10.14）。成果介绍附公开 DOI。',anchor:'research-data'},
  {id:'threejs',name:'Three.js',type:'技术',group:'engineering',p:[34,9,24],description:'开发星图个人经历三维技术图谱，关联简历经历、技术节点与原文证据，支持选择、筛选、旋转与缩放。',anchor:'project-xingtu'},
@@ -28,7 +29,7 @@ const NODES=[
  {id:'sabre',name:'Cirq / SABRE',type:'技术',group:'algorithms',p:[6,-30,6],description:'用于量子线路映射、路由优化与公开题评测。',anchor:'project-quantum'},
  {id:'analysis',name:'时序与仿真',type:'技术',group:'algorithms',p:[1,33,5],description:'用于水质预测评估和导电介质仿真优化等数学建模工作。',anchor:'project-modeling'},
 ];
-const EDGES=[['person','ssvep'],['ssvep','python'],['person','sciencedb'],['xingtu','threejs'],['person','secops'],['secops','python'],['secops','fastapi'],['person','eeg'],['person','aic'],['person','xingtu'],['person','quantum'],['person','modeling'],['eeg','pytorch'],['eeg','mamba'],['eeg','python'],['aic','pytorch'],['aic','yolo'],['xingtu','react'],['xingtu','fastapi'],['xingtu','databases'],['xingtu','docker'],['quantum','python'],['quantum','sabre'],['modeling','python'],['modeling','analysis']];
+const EDGES=[['person','market'],['person','ssvep'],['ssvep','python'],['person','sciencedb'],['xingtu','threejs'],['person','secops'],['secops','python'],['secops','fastapi'],['person','eeg'],['person','aic'],['person','xingtu'],['person','quantum'],['person','modeling'],['eeg','pytorch'],['eeg','mamba'],['eeg','python'],['aic','pytorch'],['aic','yolo'],['xingtu','react'],['xingtu','fastapi'],['xingtu','databases'],['xingtu','docker'],['quantum','python'],['quantum','sabre'],['modeling','python'],['modeling','analysis']];
 const byId=new Map(NODES.map(n=>[n.id,n]));
 let selected=null,filter='all',paused=reduced.matches,inView=false,raf=0,last=0,draws=0;
 const pauseButton=document.querySelector('#graph-pause');
