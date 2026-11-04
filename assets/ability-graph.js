@@ -7,10 +7,11 @@ const section=document.querySelector('#ability-graph');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const COLORS={research:0x8bc8d7,engineering:0xf2bc51,algorithms:0xc0afe8,person:0xffd77e};
 const NODES=[
+ {id:'ssvep',name:'AIC · SSVEP',type:'竞赛项目',group:'algorithms',p:[-35,-4,-24],description:'AIC 脑电信号分类赛项，面向稳态视觉诱发电位（SSVEP）分类；负责信号处理、分类建模与评测。比赛进行中，与DEAP/SEED情感识别科研独立。',anchor:'project-ssvep'},
  {id:'sciencedb',name:'ScienceDB 数据',type:'科研数据成果',group:'research',p:[-33,25,24],description:'以第一作者在 Science Data Bank 发布滑坡监测数据与方法复现材料（V1，2026.10.14）。成果介绍附公开 DOI。',anchor:'research-data'},
  {id:'threejs',name:'Three.js',type:'技术',group:'engineering',p:[34,9,24],description:'开发星图个人经历三维技术图谱，关联简历经历、技术节点与原文证据，支持选择、筛选、旋转与缩放。',anchor:'project-xingtu'},
  {id:'person',name:'王佳豪',type:'个人',group:'person',p:[0,0,0],description:'河南工业大学计算机科学与技术本科生，开展跨被试脑电研究，参与算法与软件工程项目。',anchor:'summary'},
- {id:'eeg',name:'脑电研究',type:'研究项目',group:'research',p:[-22,14,6],description:'围绕跨被试脑电情感识别开展研究，使用 PyTorch、Mamba／状态空间模型与图结构时空建模技术。',anchor:'project-eeg'},
+ {id:'eeg',name:'情感识别科研',type:'研究项目',group:'research',p:[-22,14,6],description:'围绕跨被试脑电情感识别开展研究，使用 PyTorch、Mamba／状态空间模型与图结构时空建模技术。',anchor:'project-eeg'},
  {id:'aic',name:'多模态检测',type:'竞赛项目',group:'research',p:[-19,-13,-13],description:'城市场景视觉多模态目标检测，涉及 PyTorch、YOLO 与多模态融合，获 AIC 省赛三等奖。',anchor:'project-aic'},
  {id:'xingtu',name:'星图',type:'团队项目',group:'engineering',p:[22,13,-5],description:'负责个人中心、简历与企业信息模块和个人经历三维技术图谱开发，参与实验复核及部署迁移；比赛已结束。',anchor:'project-xingtu'},
  {id:'secops',name:'Sentinel',type:'个人项目',group:'engineering',p:[-28,-20,13],description:'本地安全研判与防御工具原型，包含公开情报、证据报告、主机基线与告警管理；仍在持续完善。',anchor:'project-secops'},
@@ -27,7 +28,7 @@ const NODES=[
  {id:'sabre',name:'Cirq / SABRE',type:'技术',group:'algorithms',p:[6,-30,6],description:'用于量子线路映射、路由优化与公开题评测。',anchor:'project-quantum'},
  {id:'analysis',name:'时序与仿真',type:'技术',group:'algorithms',p:[1,33,5],description:'用于水质预测评估和导电介质仿真优化等数学建模工作。',anchor:'project-modeling'},
 ];
-const EDGES=[['person','sciencedb'],['xingtu','threejs'],['person','secops'],['secops','python'],['secops','fastapi'],['person','eeg'],['person','aic'],['person','xingtu'],['person','quantum'],['person','modeling'],['eeg','pytorch'],['eeg','mamba'],['eeg','python'],['aic','pytorch'],['aic','yolo'],['xingtu','react'],['xingtu','fastapi'],['xingtu','databases'],['xingtu','docker'],['quantum','python'],['quantum','sabre'],['modeling','python'],['modeling','analysis']];
+const EDGES=[['person','ssvep'],['ssvep','python'],['person','sciencedb'],['xingtu','threejs'],['person','secops'],['secops','python'],['secops','fastapi'],['person','eeg'],['person','aic'],['person','xingtu'],['person','quantum'],['person','modeling'],['eeg','pytorch'],['eeg','mamba'],['eeg','python'],['aic','pytorch'],['aic','yolo'],['xingtu','react'],['xingtu','fastapi'],['xingtu','databases'],['xingtu','docker'],['quantum','python'],['quantum','sabre'],['modeling','python'],['modeling','analysis']];
 const byId=new Map(NODES.map(n=>[n.id,n]));
 let selected=null,filter='all',paused=reduced.matches,inView=false,raf=0,last=0,draws=0;
 const pauseButton=document.querySelector('#graph-pause');
