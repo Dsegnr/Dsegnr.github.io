@@ -138,8 +138,8 @@
       "title": "高教社杯",
       "subtitle": "河南赛区省级一等奖",
       "description": "2026 高教社杯全国大学生数学建模竞赛获河南赛区省级一等奖。",
-      "link": "#honor-cumcm",
-      "linkLabel": "查看对应荣誉"
+      "link": "https://github.com/Dsegnr/math-modeling/tree/main/cumcm-2026",
+      "linkLabel": "论文与代码"
     }
   ]
 }
