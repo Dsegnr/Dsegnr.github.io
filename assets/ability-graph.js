@@ -19,7 +19,7 @@ const NODES=[
  {id:'person',name:'王佳豪',type:'个人',group:'person',p:[0,0,0],description:'河南工业大学计算机科学与技术本科生，开展跨被试脑电研究，参与算法与软件工程项目。',anchor:'summary'},
  {id:'eeg',name:'情感识别科研',type:'研究项目',group:'research',p:[-22,14,6],description:'围绕跨被试脑电情感识别开展研究，掌握 PyTorch、Mamba／状态空间模型与图结构时空建模技术。',anchor:'project-eeg'},
  {id:'aic',name:'多模态检测',type:'竞赛项目',group:'research',p:[-19,-13,-13],description:'城市场景视觉多模态目标检测，涉及 PyTorch、YOLO 与多模态融合，获 AIC 省赛三等奖。',anchor:'project-aic'},
- {id:'xingtu',name:'星图',type:'团队项目',group:'engineering',p:[22,13,-5],description:'负责个人中心、简历与企业信息模块、个人经历三维图谱，以及首页、星河登录动画和品牌统一；承担实验复核、部署迁移与版本发布，项目持续迭代。',anchor:'project-xingtu'},
+ {id:'xingtu',name:'星图',type:'团队项目',group:'engineering',p:[22,13,-5],description:'负责个人中心、简历与企业信息模块、个人经历三维图谱，以及首页、星河登录动画和品牌统一；承担实验复核、部署迁移与版本发布。项目用于“揭榜挂帅”及第三届“讯飞杯”AI+教育方向参赛。',anchor:'project-xingtu'},
  {id:'secops',name:'Sentinel',type:'个人项目',group:'engineering',p:[-28,-20,13],description:'本地安全研判与防御工具原型，包含公开情报、证据报告、主机基线与告警管理；仍在持续完善。',anchor:'project-secops'},
  {id:'quantum',name:'量子编译',type:'算法项目',group:'algorithms',p:[13,-18,14],description:'使用 Python、Cirq 与 SABRE 进行噪声自适应量子线路布局与路由优化。',anchor:'project-quantum'},
  {id:'modeling',name:'数学建模',type:'竞赛项目',group:'algorithms',p:[2,26,-15],description:'作为队长开展水质预测评估和导电介质仿真优化，获 APMCM 二等奖、华数杯全国三等奖；另获2026高教社杯全国大学生数学建模竞赛河南赛区省级一等奖。',anchor:'project-modeling'},

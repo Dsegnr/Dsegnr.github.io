@@ -28,7 +28,7 @@ const server=createServer(async(req,res)=>{try{const pathname=decodeURIComponent
    await page.goto('http://127.0.0.1:'+server.address().port,{waitUntil:'networkidle'});
    await page.locator('#growth-timeline[data-ready=true]').waitFor();await page.evaluate(()=>document.fonts.ready);
    // Keep the preview height constant so GIF frames do not move the page around.
-   await page.addStyleTag({content:'.gt-detail{min-height:230px!important}'});
+   await page.addStyleTag({content:'.gt-detail{height:270px!important;min-height:270px!important}'});
    for(const [index,id] of keys.entries()){
     await page.locator('.gt-node[data-id="'+id+'"]').click({force:true});
     await page.waitForTimeout(450);
