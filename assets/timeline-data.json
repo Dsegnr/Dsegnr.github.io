@@ -56,7 +56,7 @@
       "date": "2026.06",
       "category": "competition",
       "title": "APMCM",
-      "subtitle": "本科组二等奖",
+      "subtitle": "中文赛项 · 本科组二等奖",
       "description": "作为队长参与水质预测与评估建模，承担问题建模、算法实现、结果验证和论文统稿，获本科组二等奖。",
       "link": "https://github.com/Dsegnr/math-modeling/tree/main/apmcm-2026",
       "linkLabel": "论文与代码"
@@ -86,8 +86,8 @@
       "date": "2026.08",
       "category": "competition",
       "title": "华数杯",
-      "subtitle": "本科生组三等奖",
-      "description": "作为队长开展三维几何连通判定、蒙特卡洛模拟、置信区间估计与填充成本优化，获本科生组三等奖。",
+      "subtitle": "本科生组全国三等奖",
+      "description": "作为队长开展三维几何连通判定、蒙特卡洛模拟、置信区间估计与填充成本优化，获本科生组全国三等奖。",
       "link": "https://github.com/Dsegnr/math-modeling/tree/main/huashubei-2026",
       "linkLabel": "论文与代码"
     },
