@@ -186,17 +186,17 @@ path[fill="#216e39"], .day[fill="#216e39"] { fill: #F2B705 }</style>
                         <rect x="0" y="0" width="920" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="543.3069027055059" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="543.3069027055059" y="0" width="326.19103475323294" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="869.4979374587389" y="0" width="27.561618940300757" height="8" fill="#e34c26"/>
-                    <rect mask="url(#languages-bar)" x="897.0595563990396" y="0" width="22.940443600960336" height="8" fill="#663399"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="543.3069027055059" height="8" fill="#3B82F6"/>
+                    <rect mask="url(#languages-bar)" x="543.3069027055059" y="0" width="326.19103475323294" height="8" fill="#E0AC00"/>
+                    <rect mask="url(#languages-bar)" x="869.4979374587389" y="0" width="27.561618940300757" height="8" fill="#E45756"/>
+                    <rect mask="url(#languages-bar)" x="897.0595563990396" y="0" width="22.940443600960336" height="8" fill="#8B5CF6"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#3178c6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#3B82F6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 TypeScript
                             </div>
@@ -209,7 +209,7 @@ path[fill="#216e39"], .day[fill="#216e39"] { fill: #F2B705 }</style>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#3572A5" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#E0AC00" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 Python
                             </div>
@@ -222,7 +222,7 @@ path[fill="#216e39"], .day[fill="#216e39"] { fill: #F2B705 }</style>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#e34c26" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#E45756" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 HTML
                             </div>
@@ -235,7 +235,7 @@ path[fill="#216e39"], .day[fill="#216e39"] { fill: #F2B705 }</style>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#663399" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#8B5CF6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 CSS
                             </div>
