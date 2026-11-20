@@ -22,7 +22,7 @@ const NODES=[
  {id:'xingtu',name:'星图',type:'团队项目',group:'engineering',p:[22,13,-5],description:'负责个人中心、简历与企业信息模块、个人经历三维图谱，以及首页、星河登录动画和品牌统一；承担实验复核、部署迁移与版本发布，项目持续迭代。',anchor:'project-xingtu'},
  {id:'secops',name:'Sentinel',type:'个人项目',group:'engineering',p:[-28,-20,13],description:'本地安全研判与防御工具原型，包含公开情报、证据报告、主机基线与告警管理；仍在持续完善。',anchor:'project-secops'},
  {id:'quantum',name:'量子编译',type:'算法项目',group:'algorithms',p:[13,-18,14],description:'使用 Python、Cirq 与 SABRE 进行噪声自适应量子线路布局与路由优化。',anchor:'project-quantum'},
- {id:'modeling',name:'数学建模',type:'竞赛项目',group:'algorithms',p:[2,26,-15],description:'作为队长开展水质预测评估和导电介质仿真优化，获 APMCM 二等奖、华数杯三等奖。',anchor:'project-modeling'},
+ {id:'modeling',name:'数学建模',type:'竞赛项目',group:'algorithms',p:[2,26,-15],description:'作为队长开展水质预测评估和导电介质仿真优化，获 APMCM 二等奖、华数杯三等奖；另获2026高教社杯全国大学生数学建模竞赛河南赛区省级一等奖。',anchor:'project-modeling'},
  {id:'pytorch',name:'PyTorch',type:'技术',group:'research',p:[-34,3,14],description:'用于模型训练、推理与实验评估；关联脑电研究与多模态检测经历。',anchor:'skills'},
  {id:'mamba',name:'Mamba / SSM',type:'技术',group:'research',p:[-18,27,-13],description:'状态空间模型相关研究实践，应用于脑电时空特征建模。',anchor:'project-eeg'},
  {id:'yolo',name:'YOLO',type:'技术',group:'research',p:[-5,-31,-15],description:'城市场景视觉多模态目标检测项目中的目标检测技术。',anchor:'project-aic'},
