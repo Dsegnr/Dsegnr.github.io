@@ -49,7 +49,7 @@ path[fill="#216e39"], .day[fill="#216e39"] { fill: #F2B705 }</style>
                                     <rect class="day" x="150" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="165" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
                                     <rect class="day" x="180" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
                                 </g>
                             </svg>
                         </div>
@@ -75,7 +75,7 @@ path[fill="#216e39"], .day[fill="#216e39"] { fill: #F2B705 }</style>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            229 Commits
+                            233 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -186,22 +186,22 @@ path[fill="#216e39"], .day[fill="#216e39"] { fill: #F2B705 }</style>
                         <rect x="0" y="0" width="920" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="543.3069027055059" height="8" fill="#3B82F6"/>
-                    <rect mask="url(#languages-bar)" x="543.3069027055059" y="0" width="326.19103475323294" height="8" fill="#E0AC00"/>
-                    <rect mask="url(#languages-bar)" x="869.4979374587389" y="0" width="27.561618940300757" height="8" fill="#E45756"/>
-                    <rect mask="url(#languages-bar)" x="897.0595563990396" y="0" width="22.940443600960336" height="8" fill="#8B5CF6"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="543.3010077737248" height="8" fill="#3b82f6"/>
+                    <rect mask="url(#languages-bar)" x="543.3010077737248" y="0" width="326.187495549354" height="8" fill="#e0ac00"/>
+                    <rect mask="url(#languages-bar)" x="869.4885033230788" y="0" width="27.571301981964822" height="8" fill="#e45756"/>
+                    <rect mask="url(#languages-bar)" x="897.0598053050436" y="0" width="22.94019469495641" height="8" fill="#8b5cf6"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#3B82F6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#3b82f6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 TypeScript
                             </div>
                             <small>
-                                <div>59.06%</div>
+                                <div>59.05%</div>
                             </small>
                         </div>
                     </section>
@@ -209,7 +209,7 @@ path[fill="#216e39"], .day[fill="#216e39"] { fill: #F2B705 }</style>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#E0AC00" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#e0ac00" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 Python
                             </div>
@@ -222,7 +222,7 @@ path[fill="#216e39"], .day[fill="#216e39"] { fill: #F2B705 }</style>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#E45756" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#e45756" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 HTML
                             </div>
@@ -235,7 +235,7 @@ path[fill="#216e39"], .day[fill="#216e39"] { fill: #F2B705 }</style>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#8B5CF6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#8b5cf6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 CSS
                             </div>
@@ -2267,7 +2267,7 @@ path[fill="#216e39"], .day[fill="#216e39"] { fill: #F2B705 }</style>
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 20 Nov 2026, 10:54:45 (timezone Asia/Shanghai) with lowlighter/metrics@3.34.0-beta</span>
+                <span>Last updated 20 Nov 2026, 16:59:07 (timezone Asia/Shanghai) with lowlighter/metrics@3.34.0-beta</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
