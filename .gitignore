@@ -1,4 +1,5 @@
 # Public website assets only; never add private knowledge collections.
+.timeline-preview/
 **/kb/
 **/knowledge_base/
 **/knowledge-base/

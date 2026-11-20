@@ -1,0 +1,145 @@
+{
+  "updated": "2026-11-20",
+  "events": [
+    {
+      "id": "enrollment",
+      "date": "2025.09",
+      "category": "learning",
+      "title": "入学",
+      "subtitle": "河南工业大学 · 计算机科学与技术",
+      "description": "进入河南工业大学计算机科学与技术专业学习，成为复杂性科学研究院飞鸟创新实验班首届成员。",
+      "link": "#education",
+      "linkLabel": "教育背景"
+    },
+    {
+      "id": "eeg-start",
+      "date": "2025.09",
+      "category": "research",
+      "title": "脑电研究起步",
+      "subtitle": "跨被试脑电情感识别",
+      "description": "从深度学习基础、阅读和复现论文开始，逐步转向独立提出问题、设计方法和推进实验。目前持续开展跨被试脑电情感识别研究。",
+      "link": "#project-eeg",
+      "linkLabel": "科研经历"
+    },
+    {
+      "id": "sports",
+      "date": "2026.04",
+      "category": "learning",
+      "title": "体育文化节",
+      "subtitle": "男子引体向上三等奖",
+      "description": "获河南工业大学第七届体育文化节男子引体向上三等奖。",
+      "link": "#education",
+      "linkLabel": "个人经历"
+    },
+    {
+      "id": "good-student",
+      "date": "2026.05",
+      "category": "achievement",
+      "title": "三好学生",
+      "subtitle": "2025 年度校级荣誉",
+      "description": "获河南工业大学 2025 年度三好学生荣誉。",
+      "link": "#honors",
+      "linkLabel": "竞赛与荣誉"
+    },
+    {
+      "id": "lanqiao-province",
+      "date": "2026.05",
+      "category": "competition",
+      "title": "蓝桥杯省赛",
+      "subtitle": "河南赛区一等奖",
+      "description": "第十七届蓝桥杯 C/C++ 程序设计大学 B 组河南赛区一等奖。",
+      "link": "#honors",
+      "linkLabel": "竞赛与荣誉"
+    },
+    {
+      "id": "apmcm",
+      "date": "2026.06",
+      "category": "competition",
+      "title": "APMCM",
+      "subtitle": "本科组二等奖",
+      "description": "作为队长参与水质预测与评估建模，承担问题建模、算法实现、结果验证和论文统稿，获本科组二等奖。",
+      "link": "https://github.com/Dsegnr/math-modeling/tree/main/apmcm-2026",
+      "linkLabel": "论文与代码"
+    },
+    {
+      "id": "lanqiao-national",
+      "date": "2026.06.17",
+      "category": "competition",
+      "title": "蓝桥杯国赛",
+      "subtitle": "全国总决赛三等奖",
+      "description": "第十七届蓝桥杯 C/C++ 程序设计大学 B 组全国总决赛三等奖。",
+      "link": "#honors",
+      "linkLabel": "竞赛与荣誉"
+    },
+    {
+      "id": "iitc",
+      "date": "2026.07.22",
+      "category": "achievement",
+      "title": "工业互联网",
+      "subtitle": "平台开发工程师（中级）",
+      "description": "取得工业互联网平台开发工程师中级岗位能力评价证书。",
+      "link": "#honors",
+      "linkLabel": "个人荣誉与资格"
+    },
+    {
+      "id": "huashu",
+      "date": "2026.08",
+      "category": "competition",
+      "title": "华数杯",
+      "subtitle": "本科生组三等奖",
+      "description": "作为队长开展三维几何连通判定、蒙特卡洛模拟、置信区间估计与填充成本优化，获本科生组三等奖。",
+      "link": "https://github.com/Dsegnr/math-modeling/tree/main/huashubei-2026",
+      "linkLabel": "论文与代码"
+    },
+    {
+      "id": "sciencedb",
+      "date": "2026.10.14",
+      "category": "achievement",
+      "title": "ScienceDB",
+      "subtitle": "第一作者数据成果 · V1",
+      "description": "以第一作者发布三峡库区白家包滑坡 2017–2024 年监测数据与双时间尺度分级预警方法的复现数据与代码，归档处理结果及复现材料。",
+      "link": "https://doi.org/10.57760/sciencedb.014lj",
+      "linkLabel": "公开数据成果"
+    },
+    {
+      "id": "aic-vision",
+      "date": "2026.11",
+      "category": "competition",
+      "title": "AIC 多模态检测",
+      "subtitle": "省赛三等奖",
+      "description": "参与面向城市场景的视觉多模态目标检测，开展可见光、红外与深度信息融合实验，并实现 mAP 评测与边界测试，获省赛三等奖。",
+      "link": "#project-aic",
+      "linkLabel": "项目与评测实现"
+    },
+    {
+      "id": "copyright",
+      "date": "2026.11.02–03",
+      "category": "achievement",
+      "title": "五项软著受理",
+      "subtitle": "三项列第一著作权人",
+      "description": "五项软件著作权登记申请已受理，其中三项列第一著作权人、两项列第六著作权人。",
+      "link": "#software-copyright",
+      "linkLabel": "查看受理条目"
+    },
+    {
+      "id": "xingtu-release",
+      "date": "2026.11.18",
+      "category": "engineering",
+      "title": "星图发布",
+      "subtitle": "首页、星河登录与品牌统一",
+      "description": "完成首页、连续星河登录动画与全站品牌统一，适配深浅主题和移动端；完成三角色登录验证与前端部署发布，保留回滚镜像。",
+      "link": "#project-xingtu",
+      "linkLabel": "星图项目经历"
+    },
+    {
+      "id": "cumcm",
+      "date": "2026.11",
+      "category": "competition",
+      "title": "高教社杯",
+      "subtitle": "河南赛区省级一等奖",
+      "description": "2026 高教社杯全国大学生数学建模竞赛获河南赛区省级一等奖。",
+      "link": "#honor-cumcm",
+      "linkLabel": "查看对应荣誉"
+    }
+  ]
+}
