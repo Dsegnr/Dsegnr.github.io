@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-22",
   "events": [
     {
       "id": "enrollment",
@@ -140,6 +140,26 @@
       "description": "担任队长，2026 高教社杯全国大学生数学建模竞赛获河南赛区省级一等奖。",
       "link": "https://github.com/Dsegnr/math-modeling/tree/main/cumcm-2026",
       "linkLabel": "论文与代码"
+    },
+    {
+      "id": "mcm-skill",
+      "date": "2026.11.21",
+      "category": "achievement",
+      "title": "数模全流程 Skill",
+      "subtitle": "Agent Skill 与 Python CLI 开源",
+      "description": "将数模实践整理成独立技能与SQLite证据控制台，覆盖读题、选题、建模、验证、写作及提交整理。",
+      "link": "https://github.com/Dsegnr/mcm-contest-command",
+      "linkLabel": "查看技能与控制台"
+    },
+    {
+      "id": "humanize-skill",
+      "date": "2026.11.22",
+      "category": "achievement",
+      "title": "Humanize and Verify",
+      "subtitle": "代码与写作成果复核 Skill 开源",
+      "description": "独立整理代码、写作与交付材料三个模块，提供行为与事实保护规则、安装说明和合成示例。",
+      "link": "#project-humanize",
+      "linkLabel": "查看独立技能项目"
     }
   ]
 }

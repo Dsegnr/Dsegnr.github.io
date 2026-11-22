@@ -7,7 +7,9 @@ const section=document.querySelector('#ability-graph');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const COLORS={research:0x8bc8d7,engineering:0xf2bc51,algorithms:0xc0afe8,person:0xffd77e};
 const NODES=[
- {id:'landslide',name:'边坡哨兵',type:'工程项目',group:'engineering',p:[-14,-28,27],description:'负责监测数据分析、预警与Web可视化相关开发，提供独立公开Web源码与演示；相关数据成果已发布ScienceDB。',anchor:'project-landslide'},
+ {id:'mcm-skill',name:'数模 Skill',type:'开源工具',group:'algorithms',p:[18,34,-3],description:'独立构建数模竞赛全流程Agent Skill与Python/SQLite控制台，维护实验、结论、审查及提交材料证据。',anchor:'project-mcm-skill'},
+ {id:'humanize-skill',name:'Humanize Skill',type:'开源工具',group:'engineering',p:[-35,-7,1],description:'独立构建代码与中英文写作成果复核Skill，覆盖代码、写作与交付材料，保护程序行为、技术事实和来源。',anchor:'project-humanize'},
+ {id:'landslide',name:'边坡哨兵',type:'工程项目',group:'engineering',p:[-14,-28,27],description:'除硬件外，独立完成前端、后端、数据库与核心软件算法，完成测试部署；公开Web源码与演示说明，数据成果见ScienceDB。',anchor:'project-landslide'},
  {id:'changtu',name:'畅途灵控',type:'工程项目',group:'engineering',p:[32,28,-21],description:'多路口连通仿真、控制策略对照与GIS工作台；公开前端和可迁移模块源码，完整回放资产及SDK未分发。',anchor:'project-changtu'},
  {id:'class',name:'Class',type:'小型应用',group:'engineering',p:[-32,-29,-21],description:'班级材料收集与事务协作工具，负责需求、前后端开发、测试及部署；正式账号与班级数据不公开。',anchor:'project-class'},
  {id:'gis',name:'GIS / SUMO',type:'技术',group:'engineering',p:[36,-27,8],description:'畅途灵控中的连通交通仿真、地图回放和SuperMap空间查询；边坡项目中的地形可视化。',anchor:'project-changtu'},
@@ -34,7 +36,7 @@ const NODES=[
  {id:'sabre',name:'Cirq / SABRE',type:'技术',group:'algorithms',p:[6,-30,6],description:'用于量子线路映射、路由优化与公开题评测。',anchor:'project-quantum'},
  {id:'analysis',name:'时序与仿真',type:'技术',group:'algorithms',p:[1,33,5],description:'用于水质预测评估和导电介质仿真优化等数学建模工作。',anchor:'project-modeling'},
 ];
-const EDGES=[['person','landslide'],['person','changtu'],['person','class'],['landslide','sciencedb'],['landslide','react'],['landslide','fastapi'],['landslide','gis'],['changtu','python'],['changtu','react'],['changtu','gis'],['class','react'],['class','fastapi'],['person','market'],['person','ssvep'],['ssvep','python'],['person','sciencedb'],['xingtu','threejs'],['person','secops'],['secops','python'],['secops','fastapi'],['person','eeg'],['person','aic'],['person','xingtu'],['person','quantum'],['person','modeling'],['eeg','pytorch'],['eeg','mamba'],['eeg','python'],['aic','pytorch'],['aic','yolo'],['xingtu','react'],['xingtu','fastapi'],['xingtu','databases'],['xingtu','docker'],['quantum','python'],['quantum','sabre'],['modeling','python'],['modeling','analysis']];
+const EDGES=[['person','mcm-skill'],['person','humanize-skill'],['mcm-skill','python'],['mcm-skill','modeling'],['humanize-skill','python'],['person','landslide'],['person','changtu'],['person','class'],['landslide','sciencedb'],['landslide','react'],['landslide','fastapi'],['landslide','gis'],['changtu','python'],['changtu','react'],['changtu','gis'],['class','react'],['class','fastapi'],['person','market'],['person','ssvep'],['ssvep','python'],['person','sciencedb'],['xingtu','threejs'],['person','secops'],['secops','python'],['secops','fastapi'],['person','eeg'],['person','aic'],['person','xingtu'],['person','quantum'],['person','modeling'],['eeg','pytorch'],['eeg','mamba'],['eeg','python'],['aic','pytorch'],['aic','yolo'],['xingtu','react'],['xingtu','fastapi'],['xingtu','databases'],['xingtu','docker'],['quantum','python'],['quantum','sabre'],['modeling','python'],['modeling','analysis']];
 const byId=new Map(NODES.map(n=>[n.id,n]));
 let selected=null,filter='all',paused=reduced.matches,inView=false,raf=0,last=0,draws=0;
 const pauseButton=document.querySelector('#graph-pause');
