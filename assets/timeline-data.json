@@ -170,6 +170,36 @@
       "description": "作为团队成员参加“嘉粮守护，科技先行—基于激光雷达的粮食库存数量实时在线检测系统”项目，获中国国际大学生创新大赛（2026）省级三等奖。",
       "link": "#project-jialiang",
       "linkLabel": "嘉粮守护项目经历"
+    },
+    {
+      "id": "xiaoxing-web",
+      "date": "2026.11.24",
+      "category": "engineering",
+      "title": "星图 · 小星网页发布",
+      "subtitle": "连续透明视频交互",
+      "description": "发布小星连续透明视频网页交互，完成媒体带宽优化及三档尺寸适配。",
+      "link": "#project-xingtu",
+      "linkLabel": "查看对应项目"
+    },
+    {
+      "id": "xiaoxing-open",
+      "date": "2026.11.24",
+      "category": "achievement",
+      "title": "小星独立桌宠开源",
+      "subtitle": "Electron · 可配置动作包",
+      "description": "独立开源透明视频桌宠、16段正式动作、状态机与播放器，支持本地偏好与动作包配置。",
+      "link": "#project-xiaoxing",
+      "linkLabel": "查看对应项目"
+    },
+    {
+      "id": "resume-bert-offline",
+      "date": "2026.11.24",
+      "category": "research",
+      "title": "简历 BERT 离线试验",
+      "subtitle": "技能抽取与资格判断研究",
+      "description": "构建离线数据、训练、评测及CPU推理流程，开展技能抽取与候选资格诊断；尚未通过业务验收，未接入生产。",
+      "link": "#project-xingtu",
+      "linkLabel": "查看对应项目"
     }
   ]
 }

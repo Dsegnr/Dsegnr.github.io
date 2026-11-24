@@ -1,6 +1,6 @@
 # Growth timeline assets
 
-The site widget and preview screenshots use `assets/timeline-data.json`. Dates may describe a competition, a publication, a deployment, or the date a result was confirmed; keep that distinction in each description. Never add local proof images or credentials to this public data.
+The site widget and preview screenshots use `assets/timeline-data.json`. Use the known date precision for each event; keep offline research distinct from deployed features. Never add local proof images or credentials to this public data.
 
 To regenerate the GitHub previews, install Playwright with a Chromium browser and Pillow in your development environment, then run:
 

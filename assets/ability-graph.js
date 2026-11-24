@@ -7,6 +7,11 @@ const section=document.querySelector('#ability-graph');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const COLORS={research:0x8bc8d7,engineering:0xf2bc51,algorithms:0xc0afe8,person:0xffd77e};
 const NODES=[
+ {id:'typescript',name:'TypeScript',type:'技术',group:'engineering',p:[-15,36,-21],description:'具备类型化界面开发、桌面播放器与动作状态机实现能力；关联小星独立桌宠与星图前端。',anchor:'project-xiaoxing'},
+ {id:'xiaoxing',name:'小星桌宠',type:'独立开源项目',group:'engineering',p:[32,25,19],description:'独立开源 Electron 透明视频桌宠，提供16段动作、共享状态机与播放器；支持大小、暂停、散步、托盘恢复和动作包配置，无需星图账号或 API 密钥。',anchor:'project-xiaoxing'},
+ {id:'electron',name:'Electron',type:'技术',group:'engineering',p:[32,-16,26],description:'具备透明桌面窗口、受限 IPC、托盘恢复、本地偏好与窗口边界处理能力。',anchor:'project-xiaoxing'},
+ {id:'motion-video',name:'状态机 / 视频',type:'技术',group:'engineering',p:[-43,14,-8],description:'动作状态机、姿态过渡与透明视频播放，按视频时钟协调移动、暂停及指令切换。',anchor:'project-xiaoxing'},
+ {id:'resume-bert',name:'简历 BERT',type:'离线研究',group:'research',p:[17,40,24],description:'离线简历技能抽取、span资格判断、训练与评测流程；模型尚未通过业务验收，未接入生产。',anchor:'project-xingtu'},
  {id:'jialiang',name:'嘉粮守护',type:'竞赛项目',group:'engineering',p:[-10,35,23],description:'作为团队成员参加粮食库存数量实时在线检测项目，获中国国际大学生创新大赛（2026）省级三等奖；高教主赛道本科生创意组。',anchor:'project-jialiang'},
  {id:'mcm-skill',name:'数模 Skill',type:'开源工具',group:'algorithms',p:[18,34,-3],description:'独立构建数模竞赛全流程Agent Skill与Python/SQLite控制台，维护实验、结论、审查及提交材料证据。',anchor:'project-mcm-skill'},
  {id:'humanize-skill',name:'Humanize Skill',type:'开源工具',group:'engineering',p:[-35,-7,1],description:'独立构建代码与中英文写作成果复核Skill，覆盖代码、写作与交付材料，保护程序行为、技术事实和来源。',anchor:'project-humanize'},
@@ -22,7 +27,7 @@ const NODES=[
  {id:'person',name:'王佳豪',type:'个人',group:'person',p:[0,0,0],description:'河南工业大学计算机科学与技术本科生，开展跨被试脑电研究，参与算法与软件工程项目。',anchor:'summary'},
  {id:'eeg',name:'情感识别科研',type:'研究项目',group:'research',p:[-22,14,6],description:'围绕跨被试脑电情感识别开展研究，掌握 PyTorch、Mamba／状态空间模型与图结构时空建模技术。',anchor:'project-eeg'},
  {id:'aic',name:'多模态检测',type:'竞赛项目',group:'research',p:[-19,-13,-13],description:'城市场景视觉多模态目标检测，涉及 PyTorch、YOLO 与多模态融合，获 AIC 省赛三等奖。',anchor:'project-aic'},
- {id:'xingtu',name:'星图',type:'团队项目',group:'engineering',p:[22,13,-5],description:'负责个人中心、简历与企业信息模块、个人经历三维图谱，以及首页、星河登录动画和品牌统一；承担实验复核、部署迁移与版本发布。项目用于“揭榜挂帅”及第三届“讯飞杯”AI+教育方向参赛。',anchor:'project-xingtu'},
+ {id:'xingtu',name:'星图',type:'团队项目',group:'engineering',p:[22,13,-5],description:'负责个人中心、简历与企业信息模块、个人经历三维图谱，以及首页、星河登录动画和品牌统一；承担实验复核、部署迁移与版本发布。新增连续小星网页交互与媒体优化，另开展尚未上线的离线简历 BERT 试验。项目用于“揭榜挂帅”及第三届“讯飞杯”AI+教育方向参赛。',anchor:'project-xingtu'},
  {id:'secops',name:'Sentinel',type:'个人项目',group:'engineering',p:[-28,-20,13],description:'本地安全研判与防御工具原型，包含公开情报、证据报告、主机基线与告警管理；仍在持续完善。',anchor:'project-secops'},
  {id:'quantum',name:'量子编译',type:'算法项目',group:'algorithms',p:[13,-18,14],description:'使用 Python、Cirq 与 SABRE 进行噪声自适应量子线路布局与路由优化。',anchor:'project-quantum'},
  {id:'modeling',name:'数学建模',type:'竞赛项目',group:'algorithms',p:[2,26,-15],description:'担任高教社杯、APMCM 与华数杯队长，分别研究干扰源定位清除、水质预测评估和导电介质仿真优化；获河南赛区省级一等奖、本科组二等奖及本科生组全国三等奖。',anchor:'project-modeling'},
@@ -37,7 +42,7 @@ const NODES=[
  {id:'sabre',name:'Cirq / SABRE',type:'技术',group:'algorithms',p:[6,-30,6],description:'用于量子线路映射、路由优化与公开题评测。',anchor:'project-quantum'},
  {id:'analysis',name:'时序与仿真',type:'技术',group:'algorithms',p:[1,33,5],description:'用于水质预测评估和导电介质仿真优化等数学建模工作。',anchor:'project-modeling'},
 ];
-const EDGES=[['person','jialiang'],['person','mcm-skill'],['person','humanize-skill'],['mcm-skill','python'],['mcm-skill','modeling'],['humanize-skill','python'],['person','landslide'],['person','changtu'],['person','class'],['landslide','sciencedb'],['landslide','react'],['landslide','fastapi'],['landslide','gis'],['changtu','python'],['changtu','react'],['changtu','gis'],['class','react'],['class','fastapi'],['person','market'],['person','ssvep'],['ssvep','python'],['person','sciencedb'],['xingtu','threejs'],['person','secops'],['secops','python'],['secops','fastapi'],['person','eeg'],['person','aic'],['person','xingtu'],['person','quantum'],['person','modeling'],['eeg','pytorch'],['eeg','mamba'],['eeg','python'],['aic','pytorch'],['aic','yolo'],['xingtu','react'],['xingtu','fastapi'],['xingtu','databases'],['xingtu','docker'],['quantum','python'],['quantum','sabre'],['modeling','python'],['modeling','analysis']];
+const EDGES=[['person','xiaoxing'],['xiaoxing','electron'],['xiaoxing','motion-video'],['xiaoxing','typescript'],['xingtu','typescript'],['xingtu','motion-video'],['xingtu','resume-bert'],['resume-bert','pytorch'],['resume-bert','python'],['person','jialiang'],['person','mcm-skill'],['person','humanize-skill'],['mcm-skill','python'],['mcm-skill','modeling'],['humanize-skill','python'],['person','landslide'],['person','changtu'],['person','class'],['landslide','sciencedb'],['landslide','react'],['landslide','fastapi'],['landslide','gis'],['changtu','python'],['changtu','react'],['changtu','gis'],['class','react'],['class','fastapi'],['person','market'],['person','ssvep'],['ssvep','python'],['person','sciencedb'],['xingtu','threejs'],['person','secops'],['secops','python'],['secops','fastapi'],['person','eeg'],['person','aic'],['person','xingtu'],['person','quantum'],['person','modeling'],['eeg','pytorch'],['eeg','mamba'],['eeg','python'],['aic','pytorch'],['aic','yolo'],['xingtu','react'],['xingtu','fastapi'],['xingtu','databases'],['xingtu','docker'],['quantum','python'],['quantum','sabre'],['modeling','python'],['modeling','analysis']];
 const byId=new Map(NODES.map(n=>[n.id,n]));
 let selected=null,filter='all',paused=reduced.matches,inView=false,raf=0,last=0,draws=0;
 const pauseButton=document.querySelector('#graph-pause');
