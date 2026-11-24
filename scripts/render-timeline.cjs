@@ -22,7 +22,7 @@ const server=createServer(async(req,res)=>{try{const pathname=decodeURIComponent
   index=index.replace(/(<span class="gt-count" data-gt="count">)[^<]+/,(_,start)=>start+`${data.events.length} 条成长记录`);
   index=index.replace(/(<h2 id="growth-heading">成长记录<\/h2><p>)[^<]+/,(_,start)=>start+`${data.events[0].date.slice(0,7)} — ${data.events.at(-1).date.slice(0,7)} · 科研、工程与每一步成长`);
   await writeFile(indexPath,index);
-  const keys=['eeg-start','lanqiao-national','huashu','sciencedb','copyright','xingtu-release','cumcm','mcm-skill','humanize-skill'];
+  const keys=['eeg-start','lanqiao-national','huashu','sciencedb','copyright','xingtu-release','cumcm','mcm-skill','humanize-skill','innovation-2026'];
   for(const theme of ['light','dark']){
    await page.emulateMedia({colorScheme:theme,reducedMotion:'no-preference'});
    await page.goto('http://127.0.0.1:'+server.address().port,{waitUntil:'networkidle'});

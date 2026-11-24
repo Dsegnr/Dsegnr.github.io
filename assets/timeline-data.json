@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-24",
   "events": [
     {
       "id": "enrollment",
@@ -160,6 +160,16 @@
       "description": "独立整理代码、写作与交付材料三个模块，提供行为与事实保护规则、安装说明和合成示例。",
       "link": "#project-humanize",
       "linkLabel": "查看独立技能项目"
+    },
+    {
+      "id": "innovation-2026",
+      "date": "2026.11.24",
+      "category": "competition",
+      "title": "创新大赛",
+      "subtitle": "嘉粮守护 · 省级三等奖",
+      "description": "作为团队成员参加“嘉粮守护，科技先行—基于激光雷达的粮食库存数量实时在线检测系统”项目，获中国国际大学生创新大赛（2026）省级三等奖。本条日期为获奖消息确认日期。",
+      "link": "#project-jialiang",
+      "linkLabel": "嘉粮守护项目经历"
     }
   ]
 }

@@ -7,6 +7,7 @@ const section=document.querySelector('#ability-graph');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const COLORS={research:0x8bc8d7,engineering:0xf2bc51,algorithms:0xc0afe8,person:0xffd77e};
 const NODES=[
+ {id:'jialiang',name:'嘉粮守护',type:'竞赛项目',group:'engineering',p:[-10,35,23],description:'作为团队成员参加粮食库存数量实时在线检测项目，获中国国际大学生创新大赛（2026）省级三等奖；高教主赛道本科生创意组。',anchor:'project-jialiang'},
  {id:'mcm-skill',name:'数模 Skill',type:'开源工具',group:'algorithms',p:[18,34,-3],description:'独立构建数模竞赛全流程Agent Skill与Python/SQLite控制台，维护实验、结论、审查及提交材料证据。',anchor:'project-mcm-skill'},
  {id:'humanize-skill',name:'Humanize Skill',type:'开源工具',group:'engineering',p:[-35,-7,1],description:'独立构建代码与中英文写作成果复核Skill，覆盖代码、写作与交付材料，保护程序行为、技术事实和来源。',anchor:'project-humanize'},
  {id:'landslide',name:'边坡哨兵',type:'工程项目',group:'engineering',p:[-14,-28,27],description:'除硬件外，独立完成前端、后端、数据库与核心软件算法，完成测试部署；公开Web源码与演示说明，数据成果见ScienceDB。',anchor:'project-landslide'},
@@ -36,7 +37,7 @@ const NODES=[
  {id:'sabre',name:'Cirq / SABRE',type:'技术',group:'algorithms',p:[6,-30,6],description:'用于量子线路映射、路由优化与公开题评测。',anchor:'project-quantum'},
  {id:'analysis',name:'时序与仿真',type:'技术',group:'algorithms',p:[1,33,5],description:'用于水质预测评估和导电介质仿真优化等数学建模工作。',anchor:'project-modeling'},
 ];
-const EDGES=[['person','mcm-skill'],['person','humanize-skill'],['mcm-skill','python'],['mcm-skill','modeling'],['humanize-skill','python'],['person','landslide'],['person','changtu'],['person','class'],['landslide','sciencedb'],['landslide','react'],['landslide','fastapi'],['landslide','gis'],['changtu','python'],['changtu','react'],['changtu','gis'],['class','react'],['class','fastapi'],['person','market'],['person','ssvep'],['ssvep','python'],['person','sciencedb'],['xingtu','threejs'],['person','secops'],['secops','python'],['secops','fastapi'],['person','eeg'],['person','aic'],['person','xingtu'],['person','quantum'],['person','modeling'],['eeg','pytorch'],['eeg','mamba'],['eeg','python'],['aic','pytorch'],['aic','yolo'],['xingtu','react'],['xingtu','fastapi'],['xingtu','databases'],['xingtu','docker'],['quantum','python'],['quantum','sabre'],['modeling','python'],['modeling','analysis']];
+const EDGES=[['person','jialiang'],['person','mcm-skill'],['person','humanize-skill'],['mcm-skill','python'],['mcm-skill','modeling'],['humanize-skill','python'],['person','landslide'],['person','changtu'],['person','class'],['landslide','sciencedb'],['landslide','react'],['landslide','fastapi'],['landslide','gis'],['changtu','python'],['changtu','react'],['changtu','gis'],['class','react'],['class','fastapi'],['person','market'],['person','ssvep'],['ssvep','python'],['person','sciencedb'],['xingtu','threejs'],['person','secops'],['secops','python'],['secops','fastapi'],['person','eeg'],['person','aic'],['person','xingtu'],['person','quantum'],['person','modeling'],['eeg','pytorch'],['eeg','mamba'],['eeg','python'],['aic','pytorch'],['aic','yolo'],['xingtu','react'],['xingtu','fastapi'],['xingtu','databases'],['xingtu','docker'],['quantum','python'],['quantum','sabre'],['modeling','python'],['modeling','analysis']];
 const byId=new Map(NODES.map(n=>[n.id,n]));
 let selected=null,filter='all',paused=reduced.matches,inView=false,raf=0,last=0,draws=0;
 const pauseButton=document.querySelector('#graph-pause');
