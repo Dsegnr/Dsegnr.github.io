@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "events": [
     {
       "id": "enrollment",
@@ -200,6 +200,16 @@
       "description": "构建离线数据、训练、评测及CPU推理流程，开展技能抽取与候选资格诊断；尚未通过业务验收，未接入生产。",
       "link": "#project-xingtu",
       "linkLabel": "查看对应项目"
+    },
+    {
+      "id": "sensor-second",
+      "date": "2026.11",
+      "category": "competition",
+      "title": "传感器创新创业大赛",
+      "subtitle": "边坡哨兵 · 河南赛区省级二等奖",
+      "description": "边坡哨兵：空天地一体化滑坡监测预警系统获第十届中国（国际）传感器创新创业大赛高校组创新应用类河南赛区省级二等奖。",
+      "link": "#project-landslide",
+      "linkLabel": "查看边坡哨兵"
     }
   ]
 }
