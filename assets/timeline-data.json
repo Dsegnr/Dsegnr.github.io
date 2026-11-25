@@ -210,6 +210,16 @@
       "description": "边坡哨兵：空天地一体化滑坡监测预警系统获第十届中国（国际）传感器创新创业大赛高校组创新应用类河南赛区省级二等奖。",
       "link": "#project-landslide",
       "linkLabel": "查看边坡哨兵"
+    },
+    {
+      "id": "aic-eeg-second",
+      "date": "2026.11",
+      "category": "competition",
+      "title": "AIC 脑电信号识别",
+      "subtitle": "省赛二等奖 · 晋级国赛（公示中）",
+      "description": "第八届全球校园人工智能算法精英大赛脑电信号特征提取与识别赛项获省赛二等奖、晋级国赛（公示中，公示期至2026年11月27日）。",
+      "link": "#project-ssvep",
+      "linkLabel": "查看脑电赛项"
     }
   ]
 }

@@ -21,7 +21,7 @@ const NODES=[
  {id:'gis',name:'GIS / SUMO',type:'技术',group:'engineering',p:[36,-27,8],description:'畅途灵控中的连通交通仿真、地图回放和SuperMap空间查询；边坡项目中的地形可视化。',anchor:'project-changtu'},
 
  {id:'market',name:'正大杯市调',type:'竞赛经历',group:'algorithms',p:[29,-29,-4],description:'全国大学生市场调查与分析大赛：个人知识赛网考87分合格，团队实践赛筹备中。',anchor:'competition-market'},
- {id:'ssvep',name:'AIC · SSVEP',type:'竞赛项目',group:'algorithms',p:[-35,-4,-24],description:'AIC 脑电信号分类赛项，面向稳态视觉诱发电位（SSVEP）分类；负责信号处理、分类建模与评测。比赛进行中，与DEAP/SEED情感识别科研独立。',anchor:'project-ssvep'},
+ {id:'ssvep',name:'AIC · SSVEP',type:'竞赛项目',group:'algorithms',p:[-35,-4,-24],description:'AIC 脑电信号特征提取与识别赛项，面向稳态视觉诱发电位（SSVEP）分类；负责信号处理、分类建模与评测。2026年省赛二等奖、晋级国赛（公示中）；与DEAP/SEED情感识别科研独立。',anchor:'project-ssvep'},
  {id:'sciencedb',name:'ScienceDB 数据',type:'科研数据成果',group:'research',p:[-33,25,24],description:'以第一作者在 Science Data Bank 发布滑坡监测数据与方法复现材料（V1，2026.10.14）。成果介绍附公开 DOI。',anchor:'research-data'},
  {id:'threejs',name:'Three.js',type:'技术',group:'engineering',p:[34,9,24],description:'开发星图个人经历三维技术图谱，关联简历经历、技术节点与原文证据，支持选择、筛选、旋转与缩放。',anchor:'project-xingtu'},
  {id:'person',name:'王佳豪',type:'个人',group:'person',p:[0,0,0],description:'河南工业大学计算机科学与技术本科生，开展跨被试脑电研究，参与算法与软件工程项目。',anchor:'summary'},
