@@ -103,10 +103,10 @@ function start(){
 function stop(){if(raf){cancelAnimationFrame(raf);raf=0}}
 try{
  renderer=new THREE.WebGLRenderer({antialias:true,alpha:true,powerPreference:'low-power'});
- renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));renderer.outputColorSpace=THREE.SRGBColorSpace;
+ renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=THREE.SRGBColorSpace;
  renderer.domElement.tabIndex=0;renderer.domElement.setAttribute('aria-label','项目与技术三维图谱，可拖动旋转，使用上方按钮缩放和暂停');
  viewport.appendChild(renderer.domElement);
- scene=new THREE.Scene();camera=new THREE.PerspectiveCamera(46,1,1,500);camera.position.set(7,16,96);
+ scene=new THREE.Scene();camera=new THREE.PerspectiveCamera(46,1,1,500);camera.position.set(9,20,128);
  controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=false;controls.autoRotate=!paused;controls.autoRotateSpeed=.45;controls.minDistance=72;controls.maxDistance=190;controls.enablePan=false;
  scene.add(new THREE.AmbientLight(0xffffff,1.4));const light=new THREE.DirectionalLight(0xffedc0,2);light.position.set(20,30,70);scene.add(light);
  NODES.forEach(n=>{
@@ -135,7 +135,7 @@ try{
  renderer.domElement.addEventListener('pointerdown',e=>{pointerStart=[e.clientX,e.clientY]});
  renderer.domElement.addEventListener('pointerup',e=>{if(!pointerStart||Math.hypot(e.clientX-pointerStart[0],e.clientY-pointerStart[1])>6)return;const rect=renderer.domElement.getBoundingClientRect();const v=new THREE.Vector2((e.clientX-rect.left)/rect.width*2-1,-(e.clientY-rect.top)/rect.height*2+1);const ray=new THREE.Raycaster();ray.setFromCamera(v,camera);const hits=ray.intersectObjects([...objects.values()].filter(o=>o.visible).flatMap(o=>o.children.filter(x=>x.isMesh)));if(hits[0])select(hits[0].object.userData.id);});
  pauseButton.onclick=()=>{paused=!paused;controls.autoRotate=!paused;setPauseLabel();paused?stop():start();render()};
- document.querySelector('#graph-reset').onclick=()=>{camera.position.set(7,16,96);controls.target.set(0,0,0);controls.update();select('person');render()};
+ document.querySelector('#graph-reset').onclick=()=>{camera.position.set(9,20,128);controls.target.set(0,0,0);controls.update();select('person');render()};
  const zoom=f=>{const d=camera.position.clone().sub(controls.target);d.multiplyScalar(f);d.setLength(Math.max(controls.minDistance,Math.min(controls.maxDistance,d.length())));camera.position.copy(controls.target).add(d);controls.update();render()};
  document.querySelector('#graph-zoom-in').onclick=()=>zoom(.85);document.querySelector('#graph-zoom-out').onclick=()=>zoom(1.18);
  document.addEventListener('visibilitychange',()=>document.hidden?stop():start());
